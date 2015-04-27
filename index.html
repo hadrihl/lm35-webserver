@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>IoT-lm35 Socket.io</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on('message', function (data) {
+        document.getElementById("myspan").textContent=data;
+  });
+    </script>
+</head>
+
+<body>
+	<h1>IoT Analog Temperature Sensor (LM35)</h1>
+    <span id="myspan"> data </span>
+</body>
+</html>
